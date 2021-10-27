@@ -1,0 +1,10 @@
+.item {
+  width: 30%;
+}
+
+.picture {
+  aspect-ratio: 1.5 / 1;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
