@@ -3,10 +3,10 @@ import React, {FC} from 'react'
 export const Nav:FC = () => {
     return <div className={'nav'}>
         <div className="items">
-            <button>Items</button>
+            Items
         </div>
         <div className="cart">
-            <button>Cart</button>
+            Cart
         </div>
     </div>
 }

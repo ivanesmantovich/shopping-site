@@ -6,12 +6,12 @@ import {ItemProps} from "../types/ItemProps";
 const items:ItemProps[] = [
     {
         name: 'Apple Macbook Pro 14',
-        description: 'New M1 Pro chip, super fast',
+        description: 'New M1 Pro chip, super fast.',
         price: 2000,
         pictureLink: 'src/pictures/macbook14.jpg'
     },{
         name: 'Apple Macbook Pro 16',
-        description: 'M1 Max, even faster',
+        description: 'M1 Max, even faster.',
         price: 3500,
         pictureLink: 'src/pictures/macbook16.jpg'
     }
