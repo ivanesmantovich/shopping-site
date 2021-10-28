@@ -15,6 +15,12 @@
   max-width: 15%;
   font-size: 1.5rem;
   font-weight: bold;
+  text-align: center;
+  text-decoration: underline;
+  text-decoration-style: solid;
+  text-decoration-color: transparent;
+  text-decoration-thickness: 5px;
+  transition: text-decoration-color 0.2s ease;
 }
 
 .itemList {
@@ -51,7 +57,7 @@
   font-weight: bold;
 }
 
-.price, .addButton {
+.price, .addButton, .removeButton {
   grid-column: 85 / 100;
   display: flex;
   align-items: center;
@@ -63,8 +69,43 @@
   color: #292929;
 }
 
-.addButton {
+.addButton, .removeButton {
+  cursor: pointer;
   background-color: #F5F5F5;
   border: 2px solid orange;
   border-radius: 5px;
+  transition: all 0.5s;
 }
+
+.addButton:hover {
+  background-color: #D2D2D2;
+  transition: background-color 0.5s;
+}
+
+.removeButton:hover {
+  background-color: #B70101;
+  color: white;
+  border-color: black;
+  transition: all 0.5s;
+}
+
+/*Nav styles*/
+.nav div.underlined {
+  text-decoration: underline;
+  text-decoration-color: orange;
+  text-decoration-thickness: 5px;
+}
+
+.nav div:hover {
+  cursor: pointer;
+  text-decoration-color: rgba(255, 127, 0, 0.5);
+}
+/*Nav styles*/
+
+/*Add to Cart styles*/
+.added {
+  background-color: #1CC309 !important;
+  border:2px solid green;
+  transition: all 0.5s;
+}
+/*Add to Cart styles*/
