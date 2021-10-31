@@ -57,7 +57,7 @@
   font-weight: bold;
 }
 
-.price, .addButton, .removeButton {
+.addButton, .removeButton, .price {
   grid-column: 85 / 100;
   display: flex;
   align-items: center;
@@ -66,7 +66,57 @@
 }
 
 .price {
+  display: flex;
+  text-align: center;
+}
+
+.amountButton {
+  grid-column: 85 / 100;
+  display: flex;
+  font-weight: bold;
+  align-items: center;
+}
+
+.amountButton div {
+  flex: 1;
+}
+
+.amountPrice {
+  text-align: center;
+}
+
+.amountAmount {
+  display: flex;
+}
+
+.removeButton {
+  min-height: 24px;
+  min-width: 175px;
+}
+
+.amountButton {
+  min-width: 175px;
   color: #292929;
+}
+
+.minus, .plus, .amount {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3px 15px;
+}
+
+.minus, .plus {
+  cursor: pointer;
+  border: 1px solid rgba(1, 1, 1, 0.5);
+  border-radius: 5px;
+}
+
+.amount {
+  text-decoration: underline;
+  text-decoration-style: solid;
+  text-decoration-thickness: 2px;
+  text-decoration-color: rgba(1,1,1,0.5);
 }
 
 .addButton, .removeButton {
@@ -77,7 +127,7 @@
   transition: all 0.5s;
 }
 
-.addButton:hover {
+.addButton:hover, .minus:hover, .plus:hover {
   background-color: #D2D2D2;
   transition: background-color 0.5s;
 }
@@ -109,3 +159,10 @@
   transition: all 0.5s;
 }
 /*Add to Cart styles*/
+
+.addButton, .removeButton, .minus, .plus {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
